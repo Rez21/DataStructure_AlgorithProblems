@@ -23,6 +23,19 @@ namespace DataStructureAndAlgorithms
                     StringPermutation.Permute(str, 0, Output - 1);
                     Console.ReadKey();
                     break;
+                case 2:
+                    var Output2 = new BubbleSort(10);
+                    Random random = new Random(20);
+                    for (int i = 0; i < 10; i++)
+                    Output2.InsertNumbers((int)(random.NextDouble() * 10));
+                    Console.WriteLine("Before sorting:");
+                    Output2.DisplayElements();
+                    Console.WriteLine("During sorting:");
+                    Output2.BubbleSorts();
+                    Console.WriteLine("After sorting:");
+                    Output2.DisplayElements();
+                    Console.ReadKey();
+                    break;
             }
         }
     }
